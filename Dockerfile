@@ -25,7 +25,8 @@ RUN apt-get update && apt-get install -y \
     libncurses-dev \
     build-essential \ 
     libssl-dev \
-    libcurl4-openssl-dev
+    libcurl4-openssl-dev \
+    expect
 
 ADD . /root/$CIRCLE_PROJECT_REPONAME
 WORKDIR /root/$CIRCLE_PROJECT_REPONAME
